@@ -1,0 +1,27 @@
+{
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js",
+        "dns.js"
+      ]
+    }
+  }, 
+  "description": "Browses mDNS services on the local network", 
+  "manifest_version": 2, 
+  "name": "Laundris mDNS Browser", 
+  "permissions": [
+    "system.network",
+    "background"
+  ], 
+  "sockets": {
+    "udp": {
+      "bind": "*", 
+      "send": "*"
+    },
+    "tcpServer" : {
+      "listen": ["*"]
+    }
+  }, 
+  "version": "1.0"
+}
