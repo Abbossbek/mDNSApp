@@ -2,14 +2,14 @@
   "app": {
     "background": {
       "scripts": [
-        "background.js",
-        "dns.js"
+        "zeroconf.js",
+        "background.js"
       ]
     }
   }, 
-  "description": "Browses mDNS services on the local network", 
+  "description": "Browses Speedway RFID readers on the local network", 
   "manifest_version": 2, 
-  "name": "Laundris mDNS Browser", 
+  "name": "Speedway RFID reader browser", 
   "permissions": [
     "system.network",
     "background"
@@ -30,5 +30,5 @@
       "listen": ["*"]
     }
   }, 
-  "version": "1.0"
+  "version": "0.0.0.1"
 }
